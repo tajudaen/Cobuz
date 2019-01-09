@@ -9,6 +9,7 @@ class Controller extends Application
     protected $controller;
     protected $method;
     protected $view;
+    protected $model;
 
     public function __construct($controller, $method)
     {
@@ -17,7 +18,7 @@ class Controller extends Application
         $this->method = $method;
     }
 
-    public function model(Model $model)
+    public function model($model)
     {
         if (!class_exists($model)) {
             throw new \Exception("Model not found");

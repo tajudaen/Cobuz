@@ -1,0 +1,21 @@
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\game\core\Database.php:23
+Stack trace:
+#0 C:\xampp\htdocs\game\core\Database.php(23): PDO->__construct('mysql:host=loca...', 'root', '5445')
+#1 C:\xampp\htdocs\game\core\Database.php(39): Core\Database->__construct()
+#2 C:\xampp\htdocs\game\core\Model.php(13): Core\Database::getInstance()
+#3 C:\xampp\htdocs\game\core\Controller.php(26): Core\Model->__construct()
+#4 C:\xampp\htdocs\game\app\Controllers\Home.php(11): Core\Controller->model('\\App\\Models\\Use...')
+#5 C:\xampp\htdocs\game\core\Router.php(27): App\Controllers\Home->__construct('\\App\\Controller...', 'index')
+#6 C:\xampp\htdocs\game\bootstrap\bootstrap.php(13): Core\Router::route(Array)
+#7 C:\xampp\htdocs\game\index.php(9): require_once('C:\\xampp\\htdocs...')
+#8 {main}PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\game\core\Database.php:23
+Stack trace:
+#0 C:\xampp\htdocs\game\core\Database.php(23): PDO->__construct('mysql:host=loca...', 'root', '5445')
+#1 C:\xampp\htdocs\game\core\Database.php(39): Core\Database->__construct()
+#2 C:\xampp\htdocs\game\core\Model.php(13): Core\Database::getInstance()
+#3 C:\xampp\htdocs\game\core\Controller.php(26): Core\Model->__construct()
+#4 C:\xampp\htdocs\game\app\Controllers\Home.php(11): Core\Controller->model('\\App\\Models\\Use...')
+#5 C:\xampp\htdocs\game\core\Router.php(27): App\Controllers\Home->__construct('\\App\\Controller...', 'index')
+#6 C:\xampp\htdocs\game\bootstrap\bootstrap.php(13): Core\Router::route(Array)
+#7 C:\xampp\htdocs\game\index.php(9): require_once('C:\\xampp\\htdocs...')
+#8 {main}
