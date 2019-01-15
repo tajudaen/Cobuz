@@ -13,6 +13,7 @@ class Users extends Controller
         if (!Session::isLoggedIn()) {
             redirect('register/login');
         }
+        $this->model = $this->model('\App\Models\User');
     }
 
     public function index()
