@@ -7,10 +7,11 @@ class Router
 {
     public static function route(array $url)
     {
-
         // controller
         $controller = (isset($url[0]) && $url[0] != '') ? '\App\Controllers\\' . ucwords($url[0]) : '\App\Controllers\\' . DEFAULT_CONTROLLER;
-        $c = ucwords($url[0]);
+        if (isset($url[0])) {
+            $c = ucwords($url[0]);
+        }
         $controller_name = $controller;
         array_shift($url);
 

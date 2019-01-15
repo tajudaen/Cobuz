@@ -1,3 +1,5 @@
 <?php require ROOT . DS . 'app' . DS . 'views' . DS . 'includes' . DS . 'header.php'; ?>
-<h1><?php echo $data['page'] ?></h1>
+    <div class="jumbotron jumbotron-flud text-center">
+        
+    </div> 
 <?php require ROOT . DS . 'app' . DS . 'views' . DS . 'includes' . DS . 'footer.php'; ?>
